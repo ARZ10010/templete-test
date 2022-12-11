@@ -7,10 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
-    <title>Template</title>
+    <title>Quotes Generator</title>
 </head>
 <body>
     <!-- Script -->
+    <div class="quote-container" id="quote-container">
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <span id="quote"></span>
+        </div>
+        <!-- Author -->
+        <div class="quote-author">
+            <span id="quote-author"></span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet this!">
+               <i class="fab fa-twitter"></i>
+            </button>
+            <button id="newquote">New Quotes</button>
+       </div>
+    </div>
+    <div class="loader" id="loader"></div>
     <script src="script.js"></script>
 </body>
 </html>
